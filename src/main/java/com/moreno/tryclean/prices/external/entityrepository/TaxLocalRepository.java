@@ -19,7 +19,7 @@ public class TaxLocalRepository implements TaxEntityGateway {
         taxes.put("BAL",new Tax("BAL", BigDecimal.valueOf(18.3)));
         taxes.put("CAN",new Tax("CAN", BigDecimal.valueOf(4.7)));
         taxes.put("CYM",new Tax("CYM", BigDecimal.valueOf(18.1)));
-        taxes.put("BAL",new Tax("BAL", BigDecimal.valueOf(0.5)));
+        taxes.put("TER",new Tax("TER", BigDecimal.valueOf(0.5)));
         taxes.put("RES",new Tax("RES", BigDecimal.valueOf(21.5)));
     }
 
