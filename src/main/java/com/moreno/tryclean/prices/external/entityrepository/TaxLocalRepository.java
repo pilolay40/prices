@@ -2,12 +2,14 @@ package com.moreno.tryclean.prices.external.entityrepository;
 
 import com.moreno.tryclean.prices.entity.Tax;
 import com.moreno.tryclean.prices.entity.gateway.TaxEntityGateway;
+import org.springframework.stereotype.Repository;
 
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class TaxLocalRepository implements TaxEntityGateway {
 
     private Map<String,Tax> taxes;

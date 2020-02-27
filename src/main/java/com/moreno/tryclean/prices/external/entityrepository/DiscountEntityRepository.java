@@ -2,6 +2,7 @@ package com.moreno.tryclean.prices.external.entityrepository;
 
 import com.moreno.tryclean.prices.entity.Discount;
 import com.moreno.tryclean.prices.entity.gateway.DiscountEntityGateway;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.Comparator;
 import java.util.List;
 
 
+@Repository
 public class DiscountEntityRepository implements DiscountEntityGateway {
 
     private List<Discount> discounts;

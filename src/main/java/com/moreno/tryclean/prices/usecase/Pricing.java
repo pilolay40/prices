@@ -4,10 +4,13 @@ import com.moreno.tryclean.prices.boundaries.DiscountBoundary;
 import com.moreno.tryclean.prices.boundaries.PricingBoundaries;
 import com.moreno.tryclean.prices.boundaries.SpecialTaxBoundary;
 import com.moreno.tryclean.prices.boundaries.TaxLocalBoundary;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+@Service
 public class Pricing implements PricingBoundaries {
 
     private DiscountBoundary discount;
@@ -15,6 +18,7 @@ public class Pricing implements PricingBoundaries {
     private SpecialTaxBoundary specialTax;
     private final BigDecimal HUNDRED = new BigDecimal("100");
 
+    @Autowired
     public Pricing(DiscountBoundary discount, TaxLocalBoundary tax, SpecialTaxBoundary specialTax) {
         this.discount = discount;
         this.tax = tax;
