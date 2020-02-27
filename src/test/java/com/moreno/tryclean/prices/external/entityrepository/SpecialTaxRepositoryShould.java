@@ -1,9 +1,7 @@
 package com.moreno.tryclean.prices.external.entityrepository;
 
 import com.moreno.tryclean.prices.entity.SpecialTax;
-import com.moreno.tryclean.prices.entity.Tax;
 import com.moreno.tryclean.prices.entity.gateway.SpecialTaxEntityGateway;
-import com.moreno.tryclean.prices.entity.gateway.TaxEntityGateway;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
